@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+.title {
+    text-transform: uppercase;
+    text-align:center;
+	color:red;	
+	animation-name: doimau;
+	animation-duration: 20s;
+}
+
+.ul-nav {
+       display: flex;
+    background-color: lightgrey;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.ul-nav li:last-child {
+    margin-left:auto;
+}
+ul.ul-nav li:hover {
+    background:#111;
+}
+ul.ul-nav li:hover a {
+    color:#fff;
+}
+ul.ul-nav li {
+   list-style-type: none;
+   display:flex;  
+}
+ul.ul-nav li a {
+    padding:15px; 
+}
+.lang {
+    display: flex;
+    background: #bcb4b4;
+    border-bottom: 1px solid #fff;
+}
+.box-img {
+    padding: 15px;
+}
+.footer {
+    background: #0400ff;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 2px 0;
+}
+.box-img  {
+	 transform: rotateZ(0deg);
+	  transition:ease-in 1s;
+	}
+.box-img:hover {
+	 transform: rotateZ(360deg);
+	 transition:ease-in 1s;
+	}
+	
+	@keyframes doimau {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+.sub-menu {
+    display: none;
+}
+li.dropdown:hover .sub-menu {
+    display:block;
+    position:absolute;
+}
